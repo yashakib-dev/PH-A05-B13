@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Issues Tracker</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Tailwind + DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body class="mb-20">
+    <header class="border border-gray-300 ">
+        <div class="navbar bg-base-100 max-w-[85%] mx-auto    ">
+            <div class="flex-1">
+                <div class="flex items-center gap-2">
+                    <img class="w-10" src="./assets/github-logo.png" alt="">
+                    <p class="font-semibold text-[16px] lg:text-2xl">GitHub Issues Tracker</p>
+                </div>
+
+            </div>
+            <div class="lg:flex gap-2 ">
+
+                <label class="input input-bordered flex items-center gap-2">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search issues..." class="w-24 md:w-auto" />
+                </label>
+
+                <button class="btn hidden lg:block bg-[#4A00FF] text-[#FFFFFF] rounded-sm border-none">
+                    <div class="flex items-center gap-1  ">
+                        <i class="fa-solid fa-plus"></i>
+                        <p>New Issue</p>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section id="toggle" class="max-w-[90%] lg:max-w-7xl mx-auto mt-16  ">
+        <div class=" p-6 rounded-lg shadow-[0_0px_10px_rgba(0,0,0,0.08)] ">
+
+            <button class="btn bg-primary w-22 text-[white]"> All</button>
+            <button class="btn  w-22"> Open</button>
+            <button class="btn  w-22"> Closed</button>
+
+        </div>
+    </section>
+
+    <section id="track"
+        class="max-w-[90%] lg:max-w-7xl mx-auto mt-4 p-6 rounded-lg shadow-[0_0px_10px_rgba(0,0,0,0.08)] ">
+
+        <div class="flex justify-between">
+            <div class="flex">
+                <img src="./assets/Aperture.png" alt="">
+
+                <div class=" ml-1.5">
+                    <h2 class="font-semibold text-[18px] lg:text-[20px]">50 Issues</h2>
+                    <p class="text-[#64748B] text-[15px] lg:text-[16px] w-[110%]">Track and manage your project issues
+                    </p>
+                </div>
+            </div>
+
+            <div class="lg:flex md:flex items-center gap-4 text-sm">
+
+                <div class="flex items-center gap-2">
+                    <span class="w-3 h-3 bg-green-500 rounded-full"></span>
+                    <span class="text-[#1F2937] font-medium">Open</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <span class="w-3 h-3 bg-purple-500 rounded-full"></span>
+                    <span class="text-[#1F2937] font-medium">Closed</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="content" class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 max-w-[90%] lg:max-w-7xl mx-auto mt-1 shadow-[0_0px_10px_rgba(0,0,0,0.08)] p-6 gap-4">
+
+        <div class=" space-y-4 shadow-[0_5px_10px_rgba(0,0,0,0.1)] p-5 rounded-md border-t-4 border-green-500 " >
+
+            <div class="flex justify-between">
+            <div></div>
+            <div class="badge badge-soft badge-secondary">Secondary</div>
+            </div>
+
+            <h2 class="font-semibold">Fix navigation menu on mobile devices</h2>
+            <p class="text-[#64748B] text-[14px]">The navigation menu doesn't collapse properly on mobile devices...</p>
+
+            <div class="border-b border-gray-300 ">
+                <div class="badge badge-soft badge-secondary mb-4">Secondary</div>
+                <div class="badge badge-soft badge-secondary mb-4">Secondary</div>
+            </div>
+
+            <div class="text-[#64748B] text-[14px]" >
+                <p>#1 by john_doe</p>
+                <p> 1/15/2024</p>
+            </div>
+        </div>
+        <div class=" space-y-4 shadow-[0_5px_10px_rgba(0,0,0,0.1)] p-5 rounded-md border-t-4 border-green-500 " >
+
+            <div class="flex justify-between">
+            <div></div>
+            <div class="badge badge-soft badge-secondary">Secondary</div>
+            </div>
+
+            <h2 class="font-semibold">Fix navigation menu on mobile devices</h2>
+            <p class="text-[#64748B] text-[14px]">The navigation menu doesn't collapse properly on mobile devices...</p>
+
+            <div class="border-b border-gray-300 ">
+                <div class="badge badge-soft badge-secondary mb-4">Secondary</div>
+                <div class="badge badge-soft badge-secondary mb-4">Secondary</div>
+            </div>
+
+            <div class="text-[#64748B] text-[14px]" >
+                <p>#1 by john_doe</p>
+                <p> 1/15/2024</p>
+            </div>
+        </div>
+        <div class=" space-y-4 shadow-[0_5px_10px_rgba(0,0,0,0.1)] p-5 rounded-md border-t-4 border-green-500 " >
+
+            <div class="flex justify-between">
+            <div></div>
+            <div class="badge badge-soft badge-secondary">Secondary</div>
+            </div>
+
+            <h2 class="font-semibold">Fix navigation menu on mobile devices</h2>
+            <p class="text-[#64748B] text-[14px]">The navigation menu doesn't collapse properly on mobile devices...</p>
+
+            <div class="border-b border-gray-300 ">
+                <div class="badge badge-soft badge-secondary mb-4">Secondary</div>
+                <div class="badge badge-soft badge-secondary mb-4">Secondary</div>
+            </div>
+
+            <div class="text-[#64748B] text-[14px]" >
+                <p>#1 by john_doe</p>
+                <p> 1/15/2024</p>
+            </div>
+        </div>
+        <div class=" space-y-4 shadow-[0_5px_10px_rgba(0,0,0,0.1)] p-5 rounded-md border-t-4 border-green-500 " >
+
+            <div class="flex justify-between">
+            <div></div>
+            <div class="badge badge-soft badge-secondary">Secondary</div>
+            </div>
+
+            <h2 class="font-semibold">Fix navigation menu on mobile devices</h2>
+            <p class="text-[#64748B] text-[14px]">The navigation menu doesn't collapse properly on mobile devices...</p>
+
+            <div class="border-b border-gray-300 ">
+                <div class="badge badge-soft badge-secondary mb-4">Secondary</div>
+                <div class="badge badge-soft badge-secondary mb-4">Secondary</div>
+            </div>
+
+            <div class="text-[#64748B] text-[14px]" >
+                <p>#1 by john_doe</p>
+                <p> 1/15/2024</p>
+            </div>
+        </div>
+        <div class=" space-y-4 shadow-[0_5px_10px_rgba(0,0,0,0.1)] p-5 rounded-md border-t-4 border-green-500 " >
+
+            <div class="flex justify-between">
+            <div></div>
+            <div class="badge badge-soft badge-secondary">Secondary</div>
+            </div>
+
+            <h2 class="font-semibold">Fix navigation menu on mobile devices</h2>
+            <p class="text-[#64748B] text-[14px]">The navigation menu doesn't collapse properly on mobile devices...</p>
+
+            <div class="border-b border-gray-300 ">
+                <div class="badge badge-soft badge-secondary mb-4">Secondary</div>
+                <div class="badge badge-soft badge-secondary mb-4">Secondary</div>
+            </div>
+
+            <div class="text-[#64748B] text-[14px]" >
+                <p>#1 by john_doe</p>
+                <p> 1/15/2024</p>
+            </div>
+        </div>
+        <div class=" space-y-4 shadow-[0_5px_10px_rgba(0,0,0,0.1)] p-5 rounded-md border-t-4 border-green-500 " >
+
+            <div class="flex justify-between">
+            <div></div>
+            <div class="badge badge-soft badge-secondary">Secondary</div>
+            </div>
+
+            <h2 class="font-semibold">Fix navigation menu on mobile devices</h2>
+            <p class="text-[#64748B] text-[14px]">The navigation menu doesn't collapse properly on mobile devices...</p>
+
+            <div class="border-b border-gray-300 ">
+                <div class="badge badge-soft badge-secondary mb-4">Secondary</div>
+                <div class="badge badge-soft badge-secondary mb-4">Secondary</div>
+            </div>
+
+            <div class="text-[#64748B] text-[14px]" >
+                <p>#1 by john_doe</p>
+                <p> 1/15/2024</p>
+            </div>
+        </div>
+        <div class=" space-y-4 shadow-[0_5px_10px_rgba(0,0,0,0.1)] p-5 rounded-md border-t-4 border-green-500 " >
+
+            <div class="flex justify-between">
+            <div></div>
+            <div class="badge badge-soft badge-secondary">Secondary</div>
+            </div>
+
+            <h2 class="font-semibold">Fix navigation menu on mobile devices</h2>
+            <p class="text-[#64748B] text-[14px]">The navigation menu doesn't collapse properly on mobile devices...</p>
+
+            <div class="border-b border-gray-300 ">
+                <div class="badge badge-soft badge-secondary mb-4">Secondary</div>
+                <div class="badge badge-soft badge-secondary mb-4">Secondary</div>
+            </div>
+
+            <div class="text-[#64748B] text-[14px]" >
+                <p>#1 by john_doe</p>
+                <p> 1/15/2024</p>
+            </div>
+        </div>
+        <div class=" space-y-4 shadow-[0_5px_10px_rgba(0,0,0,0.1)] p-5 rounded-md border-t-4 border-green-500 " >
+
+            <div class="flex justify-between">
+            <div></div>
+            <div class="badge badge-soft badge-secondary">Secondary</div>
+            </div>
+
+            <h2 class="font-semibold">Fix navigation menu on mobile devices</h2>
+            <p class="text-[#64748B] text-[14px]">The navigation menu doesn't collapse properly on mobile devices...</p>
+
+            <div class="border-b border-gray-300 ">
+                <div class="badge badge-soft badge-secondary mb-4">Secondary</div>
+                <div class="badge badge-soft badge-secondary mb-4">Secondary</div>
+            </div>
+
+            <div class="text-[#64748B] text-[14px]" >
+                <p>#1 by john_doe</p>
+                <p> 1/15/2024</p>
+            </div>
+        </div>
+   
+
+    </section>
+
+
+    <script src="./script.js/home.js"></script>
+</body>
+
+</html>
