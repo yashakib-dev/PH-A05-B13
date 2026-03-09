@@ -6,8 +6,7 @@ document.getElementById('signin-button')
             
             const password = document.getElementById('pass');
             const pin = password.value;
-            
-            
+              
             if(nameValue === 'admin' && pin === 'admin123'){
                 alert("Sign In Successful.");
                  window.location.assign("home.html");
