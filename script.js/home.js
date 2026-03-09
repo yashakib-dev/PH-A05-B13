@@ -204,7 +204,7 @@ const displayLoadDetails = (issue) => {
             <p>${issue.description}</p>
         </div>
 
-        <div class="flex gap-40 bg-[#F8FAFC] p-6 rounded-lg">
+        <div class="flex gap-30 bg-[#F8FAFC] p-6 rounded-lg">
             <div>
                 <h4 class="font-semibold">Assignee:</h4>
                 <p>${issue.assignee ? issue.assignee : 'Unassigned'}</p>
