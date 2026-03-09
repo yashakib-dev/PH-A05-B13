@@ -16,7 +16,7 @@ So basically, it helps us combine or copy data easily.
 
 # 4. What is an arrow function?
 
-In JavaScript we use arrow function to write a normal function in a shorter way.
+In JavaScript, we use arrow function to write a normal function in a shorter way.
 Instead of writing the full function keyword, we use =>.
 
 # 5. What are template literals?
